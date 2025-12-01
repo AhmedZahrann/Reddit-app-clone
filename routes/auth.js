@@ -4,30 +4,6 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 const router = express.Router();
-
-// REGISTER
-// router.post("/register", async (req, res) => {
-//   try {
-//     const { email, password } = req.body;
-
-//     // hash the password
-//     const salt = await bcrypt.genSalt(10);
-//     const hashedPassword = await bcrypt.hash(password, salt);
-
-//     const user = new User({
-//       email,
-//       passwordHash: hashedPassword,
-//     });
-
-//     await user.save();
-//     res.json({ message: "User created successfully" });
-
-//   } catch (error) {
-//     res.status(500).json({ error: error.message });
-//   }
-// });
-//====================================
-// new register code : 
  
 router.post("/register", async (req, res) => {
   try {
